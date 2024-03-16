@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+  <link rel="manifest" href="/manifest.json" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <meta name="description" content="BrownFi is the top #1 Native AMM on EVM" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+  <meta property="og:title" content="BrownFi" />
+  <meta property="og:image" content="" />
+  <meta property="og:image:alt" content="" />
+  <meta property="og:image:width" content="1920" />
+  <meta property="og:image:height" content="1080" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="BrownFi is the top #1 Native AMM on EVM" />
+  <meta property="og:image:type" content="image/jpeg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:image" content="" />
+
+  <title>BrownFi</title>
+</head>
+
+<body>
+  <script type="module">
+    import { Buffer } from 'buffer';
+    import process from 'process';
+
+    window.process = process;
+    window.Buffer = Buffer;
+  </script>
+  <script>
+    // Workaround for https://github.com/rollup/plugins/issues/1014
+    window.exports = undefined;
+    window.module = undefined;
+  </script>
+  <script>
+    window.global = window;
+  </script>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
