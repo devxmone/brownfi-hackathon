@@ -3,7 +3,7 @@ import { ChainId, DEFAULT_CHAIN_ID } from 'constants/chains';
 //TODO
 const EXPLORER_PREFIXES: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: 'bscscan.com',
-  [ChainId.TESTNET]: 'explorer.goerli.linea.build',
+  [ChainId.TESTNET]: 'sepolia.scrollscan.dev',
 };
 
 export const DEFAULT_EXPLORER = {

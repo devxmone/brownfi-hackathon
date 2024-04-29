@@ -4,6 +4,7 @@ import { Currency, currencyEquals, Percent, TradeType } from '@uniswap/sdk-core'
 import { Trade as V2Trade } from '@uniswap/v2-sdk';
 
 import ArrowIcon from '../../assets/images/arrow-icon.svg';
+import ETH from '../../assets/images/ethereum-logo.png';
 import {
   ConfirmationModalContent,
   TransactionConfirmationSwapModal,
@@ -86,13 +87,20 @@ export default function ConfirmSwapModal({
     ) : null;
   }, [onConfirm, showAcceptChanges, swapErrorMessage, trade]);
 
+  console.log(trade?.inputAmount?.currency?.tokenInfo);
   // text to show while loading
   const pendingText = (
     <div style={{ display: 'flex', gap: '10px' }}>
-      <img style={{ width: '20px', height: '20px' }} src={trade?.inputAmount?.currency?.tokenInfo?.logoURI}></img>
+      <img
+        style={{ width: '20px', height: '20px' }}
+        src={trade?.inputAmount?.currency?.tokenInfo?.logoURI ?? ETH}
+      ></img>
       {trade?.inputAmount?.toSignificant(6)} {trade?.inputAmount?.currency?.symbol}
       <img style={{ width: '20px', height: '20px' }} src={ArrowIcon}></img>
-      <img style={{ width: '20px', height: '20px' }} src={trade?.outputAmount?.currency?.tokenInfo?.logoURI}></img>
+      <img
+        style={{ width: '20px', height: '20px' }}
+        src={trade?.outputAmount?.currency?.tokenInfo?.logoURI ?? ETH}
+      ></img>
       {trade?.outputAmount?.toSignificant(6)} {trade?.outputAmount?.currency?.symbol}
     </div>
   );
