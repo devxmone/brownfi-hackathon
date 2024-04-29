@@ -5,6 +5,7 @@ import { TokenList } from '@uniswap/token-lists';
 
 import sortByListPriority from 'utils/listSort';
 
+import TokenLogo from '../../assets/images/scroll.png';
 import { AppState } from '../index';
 
 import { ChainId } from './../../constants/chains';
@@ -94,20 +95,12 @@ function useCombinedTokenMapFromUrls(urls: string[] | undefined): TokenAddressMa
             },
             tokens: [
               {
-                name: 'TEST02',
-                address: '0x82dA7E68e20b6d19d3763224FC9BC3B424575c84',
-                symbol: 'TEST02',
+                name: 'MOCKTOKEN',
+                address: '0x5c51f9BE844DF47c8e2b09498Ebad06D211BeCDc',
+                symbol: 'MOCKTOKEN',
                 decimals: 18,
-                chainId: 59140,
-                logoURI: 'https://raw.githubusercontent.com/SumoSwapOfficial/tokenlist/main/logos/bnb.png',
-              },
-              {
-                name: 'TEST01',
-                address: '0xF460E6DF3Ce8fe32625dE484805129EE2dC399a5',
-                symbol: 'TEST01',
-                decimals: 18,
-                chainId: 59140,
-                logoURI: 'https://raw.githubusercontent.com/SumoSwapOfficial/tokenlist/main/logos/bnbrats.png',
+                chainId: 534351,
+                logoURI: TokenLogo,
               },
             ],
           };

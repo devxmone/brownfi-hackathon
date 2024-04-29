@@ -1,7 +1,7 @@
 import JSBI from 'jsbi';
 
 //TODO
-export const INIT_CODE_HASH = '0x016ed0e2790ae367899a0290a0ddb891c2847ee2fc5f4eedcf3b364934cdb112';
+export const INIT_CODE_HASH = '0xfffde093b933381ee67a4df6e5fb4563023357fd9d38990db94fa24d3e311ef0';
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000);
 

@@ -5,7 +5,7 @@ import { Currency } from '@uniswap/sdk-core';
 
 import { ChainId } from 'constants/chains';
 
-import NativeLogo from '../../assets/images/bnb.png';
+import NativeLogo from '../../assets/images/ethereum-logo.png';
 import useHttpLocations from '../../hooks/useHttpLocations';
 import { WrappedTokenInfo } from '../../state/lists/wrappedTokenInfo';
 import Logo from '../Logo';

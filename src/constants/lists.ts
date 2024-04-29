@@ -1,6 +1,7 @@
 // used to mark unsupported tokens, these are hosted lists of unsupported tokens
 //TODO
-const SWAP_LIST = 'https://tokenlist.s3.ap-southeast-1.amazonaws.com/tokenlist.json';
+const SWAP_LIST =
+  'https://gist.githubusercontent.com/devxmone/f9381f330b2905431f8d1a89f8dbc81b/raw/61f7cb799289bc3a786f1aa459c0d220887015e9/gistfile1.json';
 
 export const UNSUPPORTED_LIST_URLS: string[] = [];
 // export const UNSUPPORTED_LIST_URLS: string[] = [BA_LIST]

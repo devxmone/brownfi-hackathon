@@ -210,11 +210,11 @@ export default function WalletModal({
                       {
                         chainId: DEFAULT_CHAIN_ID,
                         chainName: DEFAULT_NETWORK_NAME,
-                        nativeCurrency: {
-                          name: 'BNB',
-                          symbol: 'BNB',
-                          decimals: 18,
-                        },
+                        // nativeCurrency: {
+                        //   name: 'ETH',
+                        //   symbol: 'ETH',
+                        //   decimals: 18,
+                        // },
                         rpcUrls: [DEFAULT_NETWORK_URL[DEFAULT_CHAIN_ID]],
                         blockExplorerUrls: [DEFAULT_EXPLORER[DEFAULT_CHAIN_ID]],
                       },

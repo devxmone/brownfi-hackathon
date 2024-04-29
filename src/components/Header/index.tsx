@@ -10,9 +10,9 @@ import TickIcon from '../../assets/images/icon-tick.svg';
 // import Modal from '../Modal'
 // import UniBalanceContent from './UniBalanceContent'
 import Logo from '../../assets/images/logo.png';
+import LineaIcon from '../../assets/images/scroll.png';
 import CollaseIconDown from '../../assets/images/select-icon-down.svg';
 import CollaseIconUp from '../../assets/images/select-icon-up.svg';
-import LineaIcon from '../../assets/svg/linea.svg';
 // import Logo from '../../assets/logo'
 import { useActiveWeb3React } from '../../hooks/web3';
 import { useETHBalances } from '../../state/wallet/hooks';
@@ -354,8 +354,8 @@ export default function Header() {
   const { account } = useActiveWeb3React();
   const location = useLocation();
   const options = [
-    { icon: LineaIcon, value: 'Linea Testnet' },
-    { icon: LineaIcon, value: 'Linea Mainnet' },
+    { icon: LineaIcon, value: 'Scroll Testnet' },
+    { icon: LineaIcon, value: 'Scroll Mainnet' },
   ];
   // const [isBridgeOpen, setIsBridgeOpen] = useState(false)
 
